@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic}
+\usepackage[utf8]{inputenc}  %Windows
+
+%\usepackage[scale=0.975]{geometry}
+\usepackage[top=0.5cm, bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
+\usepackage{graphicx}
+
+\firstname{Mingyang}
+\familyname{Kou}
+\title{Resume for Graduate School Admissions}
+\address{604A, Building No.2, Zijing Student Apartment}{Tsinghua University, Haidian district, Beijing}
+\mobile{(+86)18810231801}
+
+%\phone{}
+%\fax{Votre Fax}
+\email{kmy15@mails.tsinghua.edu.cn}
+\extrainfo{}
+\photo[50pt]{photo.jpg}
+%\quote{Objectif: Intégrer une équipe au sein d'un projet novateur en tant que développeur informatique.}
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}
+\begin{document}
+\maketitle
+\section{Education}
+\cventry{2015--2019}{Bachelor of Engineering}{Major in Computer Science and Technology}{Tsinghua University}{Beijing, China}{}
+
+\section{Skills}
+\cvline{Programming Languages}{C\#, C/C++, JAVA, Python, Matlab, JavaScript, HTML/CSS, VHDL, Assembly(x86, x86-64, MIPS).}
+\cvline{Framework}{Tensorflow, Keras, Caffe, Django, Vue, Wechat Mini Program}
+
+\section{Projects}
+\cventry{September-February 2017-18}{Neural Image Manipulator using DRAGAN}{Neural Network(GAN)}{}{}{Generate anime images, then draw sketches to edit the images.
+\newline I. Reproduced anime image generating network (DCGAN/WGAN/DRAGAN) of high quality.
+\newline II. Applied image editing method to deep nerual network.
+\newline III. Used illustration2vec to initialize data for training.
+\newline IV. Our project generated images which has higher clarity, authenticity and quality of edit than baseline.}{}
+
+\cventry{May-August 2017}{Proposed efficient method for full text retrieval by given multiple keywords}{Naive Bayes and TF-IDF}{}{}{Mentor: Dr. Jinjun Xiong in IBM and Professor Hailong Yao in Tsinghua Univeristy
+\newline I. Estimating the probability of the correlation between keywords with word2vec and Bayes inference.
+\newline II. Add the mutual information of Tf-Idf with the consideration of the keywords are correlate.
+\newline III. The proposed method achieves 99.6\% at the average precision of 10\% and outperforms than the existed baseline models.}{}
+
+\cventry{September-December 2017}{Commercial Auction and Trading Competition System for ASDAN}{Python/Django, Vue and Wechat Mini Program}{}{}{Team leader, architect and developer.
+\newline A simple system on webserver, web browser and Wechat Mini Program. Designed for ASDAN to manage the whole procedure of commercial auction and trading competitions.}{}
+
+%\cventry{September-November 2017}{THCOMIPS16e: A SoPC}{VHDL and Assembly}{}{}{Architect and developer.
+%\newline A 5-staged pipeline microprocessor with a MIPS16e-like instruction set architecture.}{}
+
+\cventry{April-June 2017}{Minecraft: A 3D game on FPGA}{VHDL}{}{}{Team leader, architect and developer.
+\newline Pure hardware implementation, a 3D game on FPGA. Serial Interface, keyboard and VGA support.}{}
+
+\section{Honors and Awards}
+\cvline{2014}{The third prize of the 30th Chinese Mathematical Olympiad.}
+\cvline{2014}{The second prize of National Olympiad in Informatics.}
+\cvline{2014}{The first prize of China Team Selection Competition for International Olympiad in Informatics. (rank 7)}
+\cvline{2014}{The second prize of Asia-Pacific Informatics Olympiad.}
+\cvline{2013}{The third prize of National Olympiad in Informatics.}
+
+\section{Research Interest}
+\cventry{}{Natural Language Processing}{Text generation, Text classification, Text similarity analysis, Deep nerual network for text processing(RNN, LSTM, GRU, AutoEncoder)}{}{}{}
+\cventry{}{Data Mining and Modeling}{Data Classification, Data Analysing, Data Clustering, Modeling, Data Structure, Statistics}{}{}{}
+\cventry{}{Social Network}{Model of Social Network, Social Influence, Information Diffusion, Graph Theory}{}{}{}
+\end{document}
